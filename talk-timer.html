@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Talk Timer - SVG animation</title>
+	<style type='text/css'>
+	    body {
+	        background:#BBB;
+	        color:#333;
+	        font-family:Sans-serif;
+	        text-align:center;
+	    }
+	    
+	    a {
+	        color:#555;
+        }
+	    
+	</style>    
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+	<script src='talk-timer.js' type='text/javascript'> </script>
+</head>
+<body  onload="startup()">
+
+
+    <h1>Talk Timer</h1>
+
+    <div style='position:relative;'>
+    <embed src="timer.svg" type="image/svg+xml" id="embedSVG" width="300" height="300">
+    </div>  
+    
+    <!-- Settings of the timer-->
+    <form name="values">
+    Duration:
+    <input value="30" name="duraMin" width="4" onChanged="alert()"></input> :
+    <input value="00" name="duraSec"></input>
+    </form>
+    
+    <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+    <br />
+    <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Talk Timer</span>
+    by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.éole.net" property="cc:attributionName" rel="cc:attributionURL">Pierre Haessig</a> is licensed under a
+    <br />
+     <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+     Creative Commons Attribution-ShareAlike 3.0 Unported License
+     </a>.
+    </p>
+    
+
+</html>
