@@ -7,7 +7,7 @@ var pieSegList;
 var running=false;
 
 var startTime;
-var duration=60*15; //s
+var duration = 60*15; //s
 var dt=0.05 // animaation timeste (s)
 
 function startup() {
@@ -16,6 +16,8 @@ function startup() {
     root = svgDoc.rootElement
     needle = svgDoc.getElementById('gNeedle')
     pie =  svgDoc.getElementById('pathTimePie')
+    
+    duration=readDuration()
     
     // Clear the transformations of the needle
     needle.transform.baseVal.clear()
@@ -82,14 +84,21 @@ function formatTime(t) {
 }
 
 function startTimer() {
+    // reset the start time
     startTime = Date.now();
-    // start counting
-    running = true;
     
-    animate()
+    // start counting
+    if(!running) {
+        running = true;
+        
+        // launch the animation loop
+        animate()
+    }
+    
 }
 
 function animate() {
+    /*animation loop*/
     if (!running) return
     timeChanged()
     window.setTimeout("animate()",dt*1000)
@@ -99,6 +108,11 @@ function animate() {
 function timeChanged() {
     var date = Date.now();
     var elapTime = (date - startTime)/1000 // in seconds
+    // Saturate the values
+    if(elapTime > duration) {
+        elapTime = duration
+    }
+    
     var remTime = duration - elapTime
     //console.log(elapTime)
     
@@ -120,4 +134,37 @@ function timeChanged() {
         running = false;
         setTimeAngle(359.9)
     }
+}
+
+
+function readDuration() {
+    /*Read the duration from the duration input fields
+    and do some validation*/
+    var duration = 0;
+    
+    form = document.forms.namedItem('timerParams')
+    
+    m = Math.round(form.duraMin.value)
+    s = Math.round(form.duraSec.value)
+    
+    // update the duration (global variable)
+    duration = 60*m + s // in seconds
+    if (duration>=3){
+        duration=60*m + s;
+        return duration
+    }
+    else {return false}
+}
+
+function durationChange() {
+    /*update the duration from the duration input fields*/
+    var dur = readDuration()
+    
+    if (!dur){
+        alert('duration should be at least 3 seconds!')
+    }
+    else {
+        duration = dur
+    }
+    
 }
