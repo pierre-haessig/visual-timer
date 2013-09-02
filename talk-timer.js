@@ -53,6 +53,13 @@ function setTimeAngle(angle) {
     pieSegList.replaceItem(arc, 1)
 }
 
+function setTimeColor(fraction) {
+    /*change the color from blue to orange as the time passes*/
+    c = 'rgb('+ Math.floor(fraction*255) +', '+ 187 +', '+ Math.floor((1-fraction)*255) +')'
+    //console.log(c)
+    pie.style.fill = c
+}
+
 function formatTime(t) {
     /* format time t (should be rounded) into "hh:mm:ss" String */
     t = Math.round(t)
@@ -118,6 +125,7 @@ function timeChanged() {
     
     //1) moves the time indicator
     setTimeAngle(elapTime/duration*360)
+    setTimeColor(elapTime/duration)
     
     // 2) Sets the hour:min:sec strings:
     elapTime = Math.floor(elapTime) // round down
