@@ -3,10 +3,34 @@ body {
   color: #333;
   font-family: Sans-serif;
   text-align: center;
+  margin: 20px 0px;
 }
 
 a {
   color: #555;
+}
+
+#page {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+  background: #EEE;
+}
+
+#embedSVG {
+/*  background-color: #FFF;*/
+  height: 300px;
+  width: 80%;
+}
+
+#timerParams {
+/*  float: right;*/
+}
+
+#timerParams input {
+  font-size: 1.3em;
 }
 
 input.duration {
@@ -14,14 +38,20 @@ input.duration {
   text-align: center;
 }
 
-footer {
-  display: block;
+#header {
+  padding-top: 0.2em;
+}
+
+#header h1 {
+  font-size: 1.2em;
+}
+
+#footer {
   font-size:smaller; 
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 0.5em;
+  padding: 0.5em;
   border-top: solid #333 1px;
-  width: 80%;
 }
 

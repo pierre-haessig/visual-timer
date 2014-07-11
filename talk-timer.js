@@ -31,6 +31,15 @@ function startup() {
     tR = svgDoc.getElementById('textRemain')
     tR.style.fill = "#AAA"
     
+    //resize the clock:
+    emb = document.getElementById('embedSVG')
+    svgSize = Math.min(window.innerWidth,
+                       window.innerHeight)
+    emb.style.height = svgSize + 'px'
+    emb.style.width = svgSize + 'px'
+    console.log(window.scrollY + ',' + emb.getBoundingClientRect().top)
+    window.scrollBy(0, emb.getBoundingClientRect().top)
+    
     // Launch the animation
     startTimer()
 }
