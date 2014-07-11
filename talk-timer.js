@@ -35,6 +35,7 @@ function startup() {
     emb = document.getElementById('embedSVG')
     svgSize = Math.min(window.innerWidth,
                        window.innerHeight)
+    svgSize = Math.min(svgSize, 800)
     emb.style.height = svgSize + 'px'
     emb.style.width = svgSize + 'px'
     console.log(window.scrollY + ',' + emb.getBoundingClientRect().top)
