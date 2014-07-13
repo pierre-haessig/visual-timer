@@ -32,19 +32,26 @@ function startup() {
     tR.style.fill = "#AAA"
     
     //resize the clock:
-    emb = document.getElementById('embedSVG')
-    svgSize = Math.min(window.innerWidth,
-                       window.innerHeight)
-    svgSize = Math.min(svgSize, 800)
-    emb.style.height = svgSize + 'px'
-    emb.style.width = svgSize + 'px'
-    console.log(window.scrollY + ',' + emb.getBoundingClientRect().top)
-    window.scrollBy(0, emb.getBoundingClientRect().top)
+    resizeClock()
+    window.addEventListener('resize', function(event){
+        resizeClock()
+    });
     
     // Launch the animation
     startTimer()
 }
 
+function resizeClock() {
+    emb = document.getElementById('embedSVG')
+    horiz_pad = 40
+    svgSize = Math.min(window.innerWidth - 2*horiz_pad,
+                       window.innerHeight)
+    svgSize = Math.min(svgSize, 800)
+    emb.style.height = svgSize + 'px'
+    emb.style.width = svgSize + 'px'
+    // scroll:
+    window.scrollBy(0, emb.getBoundingClientRect().top)
+}
 
 function setTimeAngle(angle) {
     /*Moves the time indicator*/
