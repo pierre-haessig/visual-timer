@@ -1,9 +1,8 @@
 # Visual Talk Timer
 # Pierre Haessig
 
+FILES = index.html timer.svg talk-timer.js style.css manifest.appcache images
+
 ### Upload webpages to remote server
 push:
-	rsync -avd talk-timer.html eole:www/timer/index.html
-	rsync -avd timer.svg eole:www/timer/
-	rsync -avd talk-timer.js eole:www/timer/
-	rsync -avd style.css eole:www/timer/
+	rsync -avd $(FILES) eole:www/timer/
