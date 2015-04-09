@@ -142,7 +142,7 @@ function timeChanged() {
     
     //1) moves the time indicator
     setTimeAngle(elapTime/duration*360)
-    setTimeColor(elapTime/duration)
+    //setTimeColor(elapTime/duration)
     
     // 2) Sets the hour:min:sec strings:
     elapTime = Math.floor(elapTime) // round down

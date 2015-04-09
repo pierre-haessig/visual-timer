@@ -21,22 +21,6 @@
    height="100%">
   <defs
      id="defs4">
-    <filter
-       inkscape:collect="always"
-       id="filter3800">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="2.8"
-         id="feGaussianBlur3802" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3806">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.4"
-         id="feGaussianBlur3808" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3827">
@@ -60,11 +44,11 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="134.69397"
-     inkscape:cy="162.37118"
+     inkscape:cx="149.05352"
+     inkscape:cy="127.92827"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
-     showgrid="true"
+     inkscape:current-layer="layer1"
+     showgrid="false"
      showguides="false"
      inkscape:guide-bbox="true"
      inkscape:window-width="967"
@@ -119,7 +103,7 @@
        sodipodi:cy="150"
        sodipodi:cx="150"
        id="path3769"
-       style="color:#000000;fill:#e0e0e0;fill-opacity:1;stroke:#787878;stroke-width:1.00000012;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#b7c0c9;fill-opacity:1;stroke:#787878;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0"
        sodipodi:type="arc" />
   </g>
   <g
@@ -129,7 +113,7 @@
      style="display:inline">
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#04bbff;fill-opacity:1;stroke:#787878;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#2e343a;fill-opacity:1;stroke:#787878;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-dashoffset:0"
        id="pathTimePie"
        sodipodi:cx="150"
        sodipodi:cy="150"
@@ -204,7 +188,7 @@
        sodipodi:cy="150"
        sodipodi:cx="150"
        id="pathFrontCircle"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;stroke:#787878;stroke-width:1.39999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#2e343a;fill-opacity:1;stroke:#787878;stroke-width:1.39999998000000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        sodipodi:type="arc" />
     <path
        style="fill:none;stroke:#787878;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -241,7 +225,7 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
        x="150"
        y="191.26096"
        id="textRemain"
@@ -251,7 +235,7 @@
        id="textElaps"
        y="135.53296"
        x="150"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
        xml:space="preserve">03:55</text>
   </g>
 </svg>
