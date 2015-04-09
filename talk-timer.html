@@ -25,9 +25,11 @@
     
     <!-- Settings of the timer-->
     <form name="timerParams" id="timerParams">
-      Duration:
-      <input type="text" value="30" name="duraMin" onchange="durationChange()" class='duration'>:<!--
-   --><input type="text" value="00" name="duraSec" onchange="durationChange()" class='duration'>
+      Duration
+      <p>
+      <input type="number" value="30" name="duraMin" onchange="durationChange()" class='duration'> :  
+      <input type="number" value="00" name="duraSec" onchange="durationChange()" class='duration'>
+      </p>
       <input type="button" value="restart" onclick="startTimer()">
     </form>
     

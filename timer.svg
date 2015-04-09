@@ -14,11 +14,13 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="timer.svg"
-   inkscape:export-filename="icons/timer-128px.png"
+   inkscape:export-filename="icons/timer-128px2.png"
    inkscape:export-xdpi="38.400002"
    inkscape:export-ydpi="38.400002"
    width="100%"
    height="100%">
+  <title
+     id="title3007">Visual Talk Timer</title>
   <defs
      id="defs4">
     <clipPath
@@ -43,19 +45,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="197.44804"
-     inkscape:cy="138.47251"
+     inkscape:zoom="1.4"
+     inkscape:cx="152.66198"
+     inkscape:cy="160.17383"
      inkscape:document-units="px"
-     inkscape:current-layer="gNeedle"
+     inkscape:current-layer="layer2"
      showgrid="false"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="967"
-     inkscape:window-height="576"
-     inkscape:window-x="57"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1056"
+     inkscape:window-height="383"
+     inkscape:window-x="61"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
      inkscape:snap-object-midpoints="true"
      inkscape:object-nodes="true"
      inkscape:object-paths="true"
@@ -86,7 +88,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>Visual Talk Timer</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Pierre Haessig</dc:title>
+          </cc:Agent>
+        </dc:creator>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -98,7 +105,7 @@
      style="display:inline">
     <path
        transform="translate(4.7857142e-6,752.36218)"
-       d="m 290,150 a 140,140 0 1 1 -280,0 140,140 0 1 1 280,0 z"
+       d="M 290,150 C 290,227.31986 227.31986,290 150,290 72.680135,290 10,227.31986 10,150 10,72.680135 72.680135,10 150,10 c 77.31986,0 140,62.680135 140,140 z"
        sodipodi:ry="140"
        sodipodi:rx="140"
        sodipodi:cy="150"
@@ -207,7 +214,7 @@
          sodipodi:cy="150"
          sodipodi:rx="140"
          sodipodi:ry="140"
-         d="M 285.22961,113.76533 A 140,140 0 0 1 271.24356,220"
+         d="m 285.22961,113.76533 c 9.61004,35.86513 4.5791,74.07888 -13.98605,106.23467"
          transform="matrix(0.42857142,0,0,-0.42857142,85.714288,966.6479)"
          sodipodi:start="6.0213859"
          sodipodi:end="6.8067841"
@@ -230,13 +237,13 @@
        x="150"
        y="191.26096"
        id="textRemain"
-       sodipodi:linespacing="125%">16:05</text>
+       sodipodi:linespacing="125%">02:01</text>
     <text
        sodipodi:linespacing="125%"
        id="textElaps"
        y="135.53296"
        x="150"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
-       xml:space="preserve">03:55</text>
+       xml:space="preserve">00:59</text>
   </g>
 </svg>
