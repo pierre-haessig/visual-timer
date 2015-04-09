@@ -25,11 +25,7 @@ function startup() {
     needleRotation.setRotate(45,150,150)
     needle.transform.baseVal.appendItem(needleRotation)
     // Get the path segment corresponding to the arc:
-    pieSegList = pie.pathSegList    
-    
-    // soften the color of the remaining time
-    tR = svgDoc.getElementById('textRemain')
-    tR.style.fill = "#AAA"
+    pieSegList = pie.pathSegList
     
     //resize the clock:
     resizeClock()

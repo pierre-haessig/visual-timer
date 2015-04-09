@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #555;
+  color: #ccc;
 }
 
 #page {
@@ -16,7 +16,8 @@ a {
   padding: 0 40px;
   max-width: 800px;
   box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-  background: #EEE;
+  background: #2e343a;
+  color: white;
 }
 
 #embedSVG {
