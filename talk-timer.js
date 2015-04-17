@@ -182,7 +182,7 @@ function readDuration() {
     
     // update the duration (global variable)
     duration = 60*m + s // in seconds
-    if (duration>=3){
+    if (duration>=5){
         duration=60*m + s;
         return duration
     }
@@ -195,9 +195,18 @@ function durationChange() {
     var dur = readDuration()
     
     if (!dur){
-        alert('duration should be at least 3 seconds!')
+        alert('duration should be at least 5 seconds!')
+        return
     }
     else {
         duration = dur
     }
+    
+    // Attempt at padding zeros to the "duraSec" input
+    // (doesn't work with firefox)
+    form = document.forms.namedItem('timerParams')
+    s = Math.round(form.duraSec.value)
+    s00 = ('0'+s.toString()).slice(-2)
+    console.log(s00)
+    form.duraSec.value = s00
 }
