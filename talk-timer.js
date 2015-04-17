@@ -10,14 +10,17 @@ var startTime;
 var duration = 60*15; //s
 var dt=0.05 // animaation timeste (s)
 
+
 function startup() {
+    /* body onload event */
+    
     // Init all variables
     svgDoc = document.getElementById('embedSVG').getSVGDocument()
     root = svgDoc.rootElement
     needle = svgDoc.getElementById('gNeedle')
     pie =  svgDoc.getElementById('pathTimePie')
     
-    duration=readDuration()
+    duration = readDuration()
     
     // Clear the transformations of the needle
     needle.transform.baseVal.clear()
@@ -27,8 +30,19 @@ function startup() {
     // Get the path segment corresponding to the arc:
     pieSegList = pie.pathSegList
     
-    // Launch the animation
-    startTimer()
+    // Reset the appearance of the timer
+    initTimerAppearance()
+}
+
+
+function initTimerAppearance() {
+    setTimeAngle(0)
+
+    tE = svgDoc.getElementById('textElaps')
+    tE.textContent = ':'
+    
+    tR = svgDoc.getElementById('textRemain')
+    tR.textContent = ':'
 }
 
 
@@ -49,12 +63,14 @@ function setTimeAngle(angle) {
     pieSegList.replaceItem(arc, 1)
 }
 
+
 function setTimeColor(fraction) {
     /*change the color from blue to orange as the time passes*/
     c = 'rgb('+ Math.floor(fraction*255) +', '+ 187 +', '+ Math.floor((1-fraction)*255) +')'
     //console.log(c)
     pie.style.fill = c
 }
+
 
 function formatTime(t) {
     /* format time t (should be rounded) into "hh:mm:ss" String */
@@ -86,6 +102,7 @@ function formatTime(t) {
     return str
 }
 
+
 function startTimer() {
     // reset the start time
     startTime = Date.now();
@@ -96,9 +113,19 @@ function startTimer() {
         
         // launch the animation loop
         animate()
+        startBtn = document.getElementById('startBtn')
+        startBtn.value = 'restart'
     }
     
+    scrollToTimer()
 }
+
+
+function scrollToTimer() {
+    emb = document.getElementById('embedSVG')
+    window.scrollBy(0, emb.getBoundingClientRect().top)
+}
+
 
 function animate() {
     /*animation loop*/
@@ -137,6 +164,8 @@ function timeChanged() {
     if (elapTime+dt > duration) {
         running = false;
         setTimeAngle(359.9)
+        startBtn = document.getElementById('startBtn')
+        startBtn.value = 'start'
     }
 }
 
@@ -160,6 +189,7 @@ function readDuration() {
     else {return false}
 }
 
+
 function durationChange() {
     /*update the duration from the duration input fields*/
     var dur = readDuration()
@@ -170,5 +200,4 @@ function durationChange() {
     else {
         duration = dur
     }
-    
 }
