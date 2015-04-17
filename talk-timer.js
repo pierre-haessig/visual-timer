@@ -32,6 +32,9 @@ function startup() {
     
     // Reset the appearance of the timer
     initTimerAppearance()
+    
+    // hide the About section
+    aboutClick()
 }
 
 
@@ -209,4 +212,27 @@ function durationChange() {
     s00 = ('0'+s.toString()).slice(-2)
     console.log(s00)
     form.duraSec.value = s00
+}
+
+/*Manage the About section in the footer*/
+
+function aboutClick() {
+    /* Toggle the visibility of the About section */
+    aboutDiv = document.getElementById('aboutDiv')
+    aboutH = document.getElementById('aboutH')
+    
+    if (aboutDiv.style.display != 'none') {
+        // hide
+        aboutDiv.style.display = 'none'
+        aboutH.firstElementChild.innerHTML = "About (+)"
+    }
+    else {
+        // show
+        aboutDiv.style.display = 'block'
+        aboutH.firstElementChild.innerHTML = "About (-)"
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+    
+    
+    return;
 }

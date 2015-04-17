@@ -6,6 +6,12 @@ body {
   margin: 0px;
 }
 
+
+h1, h2, h3, h4 {
+  /*font-weight:300; /*light font*/
+  /*letter-spacing: 0.5em;*/
+}
+
 a {
   color: #ccc;
 }
@@ -36,7 +42,6 @@ a {
 
 #timerParams h2 {
   font-size: inherit;
-  font-weight: 300; /*light font*/
   margin-bottom: 0.5em;
 }
 
@@ -96,7 +101,6 @@ input#startBtn {
 
 #header h1 {
   font-size: 1.5em;
-  font-weight: 300; /*light font*/
 }
 
 #footer {
@@ -108,3 +112,7 @@ input#startBtn {
   border-top: solid #555 1px;
 }
 
+h2 a {
+  color: inherit;
+  text-decoration: none;
+}

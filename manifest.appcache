@@ -1,7 +1,8 @@
 CACHE MANIFEST
-# v1.1b - 2015-04-17
+# v1.1c - 2015-04-17
 # Files to make the app work offline
 timer.svg
 talk-timer.js
 style.css
 images/timer-icon-128px.png
+images/CC-by-sa_80x15.png
