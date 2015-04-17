@@ -49,6 +49,7 @@ a {
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
+  padding: 5px;
 }
 
 #timerParams input:focus {
@@ -57,13 +58,15 @@ a {
 
 #timerParams input.duration {
   display: inline-block;
-  width: 40%; /*the two inputs fit one line*/
+  width: 46%; /*the two inputs fit one line*/
   text-align: center;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 label.duration {
   display: inline-block;
-  width: 40%; /*the two inputs fit one line*/
+  width: 46%; /*the two inputs fit one line*/
   text-align: center;
   font-weight: 300;
 }
@@ -73,11 +76,17 @@ p#duraInputs {
 }
 
 .duraSeparator {
-  margin:0px 0.3em;
+  display: inline-block;
+  width: 8%;
 }
 
 label + .duraSeparator {
   font-weight: 300;
+}
+
+input#startBtn {
+  display: inline-block;
+  width: 100%;
 }
 
 /* Header  and footer */
