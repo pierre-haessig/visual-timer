@@ -3,7 +3,7 @@ body {
   color: #333;
   font-family: Lato, Sans-serif;
   text-align: center;
-  margin: 20px 0px;
+  margin: 0px;
 }
 
 a {
@@ -13,28 +13,26 @@ a {
 #page {
   position: relative;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 5px;
   max-width: 800px;
-  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+  /*box-shadow: inset 0px 0px 10px black;*/
   background: #2e343a;
   color: white;
 }
 
 #embedSVG {
-  height: 300px;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  max-height: 100vh;
 }
 
 #timerParams {
 /*  float: right;*/
 }
 
-#timerParams input {
-  font-size: 1.3em;
-}
-
 input {
   font:inherit;
+  font-size: 1.3em;
   background-color: #2e343a;
   color: #ccc;
   border-color:#555;
@@ -52,12 +50,14 @@ input.duration {
   text-align: center;
 }
 
+/* Header  and footer */
 #header {
   padding-top: 0.2em;
 }
 
 #header h1 {
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: 300; /*light font*/
 }
 
 #footer {

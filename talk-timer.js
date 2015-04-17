@@ -27,27 +27,10 @@ function startup() {
     // Get the path segment corresponding to the arc:
     pieSegList = pie.pathSegList
     
-    //resize the clock:
-    resizeClock()
-    window.addEventListener('resize', function(event){
-        resizeClock()
-    });
-    
     // Launch the animation
     startTimer()
 }
 
-function resizeClock() {
-    emb = document.getElementById('embedSVG')
-    horiz_pad = 40
-    svgSize = Math.min(window.innerWidth - 2*horiz_pad,
-                       window.innerHeight)
-    svgSize = Math.min(svgSize, 800)
-    emb.style.height = svgSize + 'px'
-    emb.style.width = svgSize + 'px'
-    // scroll:
-    window.scrollBy(0, emb.getBoundingClientRect().top)
-}
 
 function setTimeAngle(angle) {
     /*Moves the time indicator*/
