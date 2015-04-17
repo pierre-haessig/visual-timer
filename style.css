@@ -27,27 +27,57 @@ a {
 }
 
 #timerParams {
-/*  float: right;*/
+  width:100%;
+  max-width:15em;
+  margin: 0px auto; /*center*/
+  font-size: 1.3em;
+  color: #ccc;
 }
 
-input {
-  font:inherit;
-  font-size: 1.3em;
+#timerParams h2 {
+  font-size: inherit;
+  font-weight: 300; /*light font*/
+  margin-bottom: 0.5em;
+}
+
+#timerParams input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
   background-color: #2e343a;
-  color: #ccc;
   border-color:#555;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
 }
 
-input:focus {
+#timerParams input:focus {
   border-color:#aaa;
 }
 
-input.duration {
-  width: 2em;
+#timerParams input.duration {
+  display: inline-block;
+  width: 40%; /*the two inputs fit one line*/
   text-align: center;
+}
+
+label.duration {
+  display: inline-block;
+  width: 40%; /*the two inputs fit one line*/
+  text-align: center;
+  font-weight: 300;
+}
+
+p#duraInputs {
+  word-spacing: 0px;
+}
+
+.duraSeparator {
+  margin:0px 0.3em;
+}
+
+label + .duraSeparator {
+  font-weight: 300;
 }
 
 /* Header  and footer */
