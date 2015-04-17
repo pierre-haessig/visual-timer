@@ -44,7 +44,7 @@ a {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  background-color: #2e343a;
+  background: inherit;
   border-color:#555;
   border-style: solid;
   border-width: 1px;
